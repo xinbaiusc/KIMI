@@ -20,9 +20,9 @@ R packages "VirFinder", "glmnet" and "Rcpp" are needed to be installed before In
 
 To install "glmnet" and "Rcpp", start R and enter,
 
-(```)
+<pre>
 install.packages("glmnet", dependencies=TRUE)
 install.packages("Rcpp", dependencies=TRUE)
-(```)
+</pre>
 
 
