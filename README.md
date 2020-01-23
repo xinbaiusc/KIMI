@@ -25,4 +25,7 @@ install.packages("glmnet", dependencies=TRUE)
 install.packages("Rcpp", dependencies=TRUE)
 </pre>
 
+To install "VirFinder", please refer to 
+[VirFinder](https://github.com/jessieren/VirFinder)
+
 
