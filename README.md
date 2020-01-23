@@ -14,4 +14,15 @@ For each query sequence, KIMI first counts  the number of occurrences of all k-m
 the kmer frequency vector of all sequences are further normalized with mean 0 and standard diviation 1. Then the WMW test is applied for testing the significance of each kmer being relevant, and
 the kmer that is least likely to be relevant is dropped. We then apply knockoff inference for selecting relevant kmers.
 
+## Dependencies
+
+R packages "VirFinder", "glmnet" and "Rcpp" are needed to be installed before Installation of KIMI.
+
+To install "glmnet" and "Rcpp", start R and enter,
+
+(''')
+install.packages("glmnet", dependencies=TRUE)
+install.packages("Rcpp", dependencies=TRUE)
+(''')
+
 
