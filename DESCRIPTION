@@ -1,0 +1,14 @@
+Package: KIMI
+Type: Package
+Title: Knockoff Inference for Motif Identification from molecular sequences with false discovery rate control
+Version: 1.0.0
+Encoding: UTF-8
+Depends: R (>= 3.4.0)
+Imports: VirFinder, glmnet
+Date: 2020-01-16
+Authors: Xin Bai, Jie Ren, Yingying Fan, Fengzhu Sun
+Maintainer: Xin Bai <xinbai@usc.edu>
+Description: The package provides functions to identify motifs from binary types of molecular sequences with false discovery rate control.
+License: GPL (>= 2)
+LinkingTo: Rcpp
+RoxygenNote: 7.0.2
