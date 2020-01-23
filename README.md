@@ -28,4 +28,10 @@ install.packages("Rcpp", dependencies=TRUE)
 To install "VirFinder", please refer to 
 [VirFinder](https://github.com/jessieren/VirFinder)
 
+## Installation
+
+To install the R package KIMI, follow the instuctions on
+
+<http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-packages>
+
 
