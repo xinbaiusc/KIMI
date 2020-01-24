@@ -26,7 +26,7 @@ install.packages("Rcpp", dependencies=TRUE)
 </pre>
 
 To install "VirFinder", please refer to 
-[VirFinder](https://github.com/jessieren/VirFinder)
+[VirFinder](https://github.com/jessieren/VirFinder).
 
 ## Installation
 
@@ -55,4 +55,10 @@ Then one column that is most unlikely to be relevant is dropped. Where `y` stand
 
 <pre>
 drop_idx <- drop_one_kmer(X, y)
+</pre>
+
+Finally, knockoff inference is applied to select the relevant kmers and the indexes of selected kmers are output. Where `X` is the matrix with one column dropped, `y` is the label vector and `q` is the prespecified target FDR.
+
+<pre>
+S_kmer <- KIMI_plus(X, y, q)
 </pre>
