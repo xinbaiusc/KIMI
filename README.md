@@ -44,3 +44,15 @@ For example, one can first read the sequences and count the occurrence of 5-mers
 library(KIMI)
 F <- readFasta(&lt;path_to_the_fasta_file&gt;, w = 5)
 </pre>
+
+Each row of the kmer frequency matrix can then be normalized into standard multigaussian with mean 0 and standard deviation 1.
+
+<pre>
+X <- normalize_standard_gaussian(F)
+</pre>
+
+Then one column that is most unlikely to be relevant is dropped. Where `y` stands for the label vector and `drop_idx` stands for the index of the dropped column.
+
+<pre>
+drop_idx <- drop_one_kmer(X, y)
+</pre>
