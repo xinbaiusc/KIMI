@@ -12,7 +12,7 @@ The R package provides functions based on knockoff inference to identify motifs 
 
 For each query sequence, KIMI first counts  the number of occurrences of all k-mers by a c++ program using a hash table. The kmer counts are then normalized into frequencies. For each particular kmer, 
 the kmer frequency vector of all sequences are further normalized with mean 0 and standard diviation 1. Then the WMW test is applied for testing the significance of each kmer being relevant, and
-the kmer that is least likely to be relevant is dropped. We then apply knockoff inference for selecting relevant kmers.
+the kmer that is least likely to be relevant is dropped. We then apply knockoff inference for selecting relevant kmers . 
 
 ## Dependencies
 
@@ -34,4 +34,13 @@ To install the R package KIMI, follow the instuctions on
 
 <http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-packages>
 
+## Usage
 
+The KIMI R package takes a fasta file containing binary types of sequences, sequence labels, and the prespecified kmer size as inputs, and outputs indexes of selected kmers sorted according to the alphabet order.
+
+For example, one can first read the sequences and count the occurrence of 5-mers,
+
+<pre>
+library(KIMI)
+F <- readFasta(<path_to_the_fasta_file>, w = 5)
+</pre>
