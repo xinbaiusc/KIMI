@@ -12,7 +12,7 @@ The R package provides functions based on knockoff inference to identify motifs 
 
 For each query sequence, KIMI first counts  the number of occurrences of all k-mers by a c++ program using a hash table. The kmer counts are then normalized into frequencies. For each particular kmer, 
 the kmer frequency vector of all sequences are further normalized with mean 0 and standard diviation 1. Then the WMW test is applied for testing the significance of each kmer being relevant, and
-the kmer that is least likely to be relevant is dropped. We then apply knockoff inference for selecting relevant kmers . 
+the kmer that is least likely to be relevant is dropped. We then apply knockoff inference for selecting relevant kmers [1]. 
 
 ## Dependencies
 
@@ -75,3 +75,8 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 Commercial users should contact Prof. Yingying Fan (<fanyingy@marshall.usc.edu>) or Prof. Fengzhu Sun (<fsun@usc.edu>), copyright at the University of Southern California.
+
+## References
+[1] Fan, Y., Demirkaya, E., Li, G. and Lv, J. (2020). 
+RANK: large-scale inference with graphical nonlinear knockoffs. 
+*Journal of the American Statistical Association*, In press.
