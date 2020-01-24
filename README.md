@@ -42,5 +42,5 @@ For example, one can first read the sequences and count the occurrence of 5-mers
 
 <pre>
 library(KIMI)
-F <- readFasta(<path_to_the_fasta_file>, w = 5)
+F <- readFasta(&lt;path_to_the_fasta_file&gt;, w = 5)
 </pre>
