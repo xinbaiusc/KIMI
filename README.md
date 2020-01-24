@@ -1,4 +1,4 @@
-# KIMI: R package based on Knockoff Inference for Motif Identification from molecular sequences with false discovery rate control 
+# KIMI: R package based on Knockoff Inference for Motif Identification from molecular sequences with controlled false discovery rate 
 
 Version: 1.0.0
 
