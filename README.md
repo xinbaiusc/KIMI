@@ -38,7 +38,7 @@ To install the R package KIMI, follow the instuctions on
 
 The KIMI R package takes a fasta file containing binary types of sequences, sequence labels, and the prespecified kmer size as inputs, and outputs indexes of selected kmers sorted according to the alphabet order.
 
-For example, one can first read the sequences and count the occurrence of 5-mers, where 'F' standards for the kmer frequency matrix.
+For example, one can first read the sequences and count the occurrence of 5-mers, where `F` standards for the kmer frequency matrix.
 
 <pre>
 library(KIMI)
